@@ -1,0 +1,22 @@
+{
+  "name": "eladkap.github.io",
+  "version": "1.0.0",
+  "description": "Portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eladkap/eladkap.github.io.git"
+  },
+  "author": "Elad Kapuza",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eladkap/eladkap.github.io/issues"
+  },
+  "homepage": "https://github.com/eladkap/eladkap.github.io#readme",
+  "dependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
