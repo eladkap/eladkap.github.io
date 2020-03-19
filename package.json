@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/eladkap/eladkap.github.io#readme",
   "dependencies": {
-    "node-sass": "^4.13.1"
+    "node-sass": "^4.13.1",
+    "sass": "^1.26.3"
   }
 }
