@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Portfolio website",
   "main": "index.js",
+  "homepage": "https://eladkap.github.io",
   "scripts": {
     "sass": "node-sass -w scss/ -o css/ --recursive",
     "deploy": "gh-pages -d dist"
@@ -16,8 +17,8 @@
   "bugs": {
     "url": "https://github.com/eladkap/eladkap.github.io/issues"
   },
-  "homepage": "https://github.com/eladkap/eladkap.github.io#readme",
   "dependencies": {
+    "gh-pages": "^2.2.0",
     "node-sass": "^4.13.1",
     "sass": "^1.26.3"
   }
