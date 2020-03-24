@@ -45,9 +45,12 @@
     height: 25vh;
     transform: translate3d(100%, 0, 0);
 
-    // .portrait {
-    //   background: url(../img/profile1_bw.jpg);
-    // }
+    .portrait {
+      .portrait_bw {
+        width: 150px;
+        height: 150px;
+      }
+    }
     width: 100px;
     height: 200px;
   }
@@ -56,6 +59,7 @@
     grid-template-areas:
       "bioimage"
       "bio"
+      "work_exp"
       "job1"
       "job2"
       "job3";
@@ -63,8 +67,28 @@
     grid-template-columns: 1fr;
   }
 
+  .resume-info {
+    grid-template-areas:
+      "summary"
+      "projects_title"
+      "project1"
+      "project2"
+      "project3"
+      "education_title"
+      "education1"
+      "education2"
+      "awards_title"
+      "award1"
+      "award2"
+      "award3";
+  }
+
   .projects {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .btn {
+    font-size: 1.5rem;
   }
 }
 
@@ -82,5 +106,13 @@
 
   .projects {
     grid-template-columns: 1fr;
+  }
+
+  .btn {
+    font-size: 1rem;
+  }
+
+  .bio-image {
+    width: 15rem;
   }
 }

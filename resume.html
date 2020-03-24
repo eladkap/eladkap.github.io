@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="ie=edge" />
+    <script
+      src="https://kit.fontawesome.com/dee22dccf2.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Elad Kapuza::About Me</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+      </div>
+
+      <nav class="menu">
+        <div class="menu-branding">
+          <div class="portrait">
+            <img
+              class="portrait_bw"
+              src="img/profile1_bw.jpg"
+              alt="Elad Kapuza"
+            />
+          </div>
+        </div>
+        <ul class="menu-nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">
+              Home
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">
+              About Me
+            </a>
+          </li>
+
+          <li class="nav-item current">
+            <a href="resume.html" class="nav-link">
+              My Resume
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="work.html" class="nav-link">
+              My Work
+            </a>
+          </li>
+
+          <!-- <li class="nav-item">
+            <a href="contact.html" class="nav-link">
+              Contact
+            </a>
+          </li> -->
+        </ul>
+      </nav>
+    </header>
+
+    <main id="resume">
+      <h1 class="lg-heading">My <span class="text-secondary">Resume</span></h1>
+      <br />
+      <h3 class="lg-heading">
+        Online Resume
+      </h3>
+
+      <a href="docs/resume.pdf" class="btn-light" target="_blank">
+        <i class="fa fa-file-pdf-o"></i> Download resume.pdf
+      </a>
+
+      <div class="resume-info">
+        <div class="summary">
+          <!-- <p>
+            I am a software engineer with about 3 years of experience in
+            software development.
+          </p> -->
+        </div>
+
+        <div class="projects_title">
+          <h1 class="text-secondary">Projects</h1>
+        </div>
+          
+
+        <div class="project project-1">
+          <h3>FM-Delta: Fault Management Packet Compression</h3>
+          <h5>Cooperation with Marvell Technology | Oct 2014</h5>
+          <img class="company-image" src="img/companies/marvell_logo.png" />
+
+          <p>
+            In this project we implemented a few packet
+            compression/decompression algorithms for network devices. We
+            compared the algorithms in terms of performance and compression
+            ratio. The project included researching and analyzing well-known
+            compression algorithms. We implemented a simple hardware-friendly
+            delta encoding algorithm with of compression ratio of ~2.6.
+            Working tools: Linux Ubuntu, VMWARE, C, Bash for scripting, Matlab
+            for analyzing results and presenting graphs. <br />
+            We published the paper "FM-Delta Compressing Fault Management
+            Packets" that was accepted by IEEE. The project poster
+            participated at the IM 2017 conference in Lisbon, Portugal.
+          </p>
+         
+            <a href="https://ieeexplore.ieee.org/document/7987338" class="btn-dark" target="_blank">
+              <i class="fa fa-external-link"></i>
+              Link to IEEE</a
+            >
+         
+            <a
+              href="https://ycassuto.net.technion.ac.il/files/2018/05/4-2.pdf"
+              class="btn-light"
+              target="_blank"
+            >
+              <i class="fa fa-file-pdf-o"></i> Paper PDF Version
+            </a>
+          </div>
+
+        <div class="project project-2">
+          <h3>
+            Tunerino - Automatic Electric Guitar Tuner
+          </h3>
+          <h5>Final Project - Arduino and IoT | Feb 2016</h5>
+          <!-- <img class="company-image" src="img/companies/marvell_logo.png" /> -->
+
+          <p>
+            Tunerino - this product allows electric guitar players from all
+            levels to tune their guitar quickly, friendly and without knowing
+            the exact musical note. The player chooses a note with the
+            application, press "Tune" and the tuner automatically tunes the
+            string with a servo attached to the peg. The player may choose his
+            favorite song or musical configuration (standard, drop C, etc) and
+            the tuner will automatically tune is guitar accordingly. In this
+            project we implemented a tuner circuit using Arduino, Windows
+            Phone application and Microsoft Azure database.
+          </p>
+
+          <a
+          href="http://www.cs.technion.ac.il/events/2016/2461/docs/tunerino.pdf"
+          class="btn-light"
+          target="_blank"
+        >
+          <i class="fa fa-file-pdf-o"></i> Poster PDF
+        </a>
+        </div>
+
+        <div class="project project-3">
+          <h3>
+            Original IQ Tester
+          </h3>
+          <h5>Final Project - Algorithms in Logic and SAT Solvers | Feb 2017</h5>
+
+          <p>
+            I Developed The Original IQ Tester box game in C# Forms Applications and python using SAT solver.
+            The app solves the game using SAT formulas.
+          </p>
+
+          <a href="https://github.com/eladkap/OriginalIQTester" class="btn-dark" target="_blank"></i>
+            <i class="fab fa-github fa-1x"></i> Github</a
+          >
+       
+          <a
+            href="docs/projects/IQ-Tester-Summary.pdf"
+            class="btn-light"
+            target="_blank"
+          >
+            <i class="fa fa-file-pdf-o"></i> Project Summary PDF
+          </a>
+        </div>
+       
+      </div>
+    </main>
+
+    <footer id="main-footer">
+      Copyright &copy; Elad Kapuza 2020
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

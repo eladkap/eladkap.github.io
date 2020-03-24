@@ -20,12 +20,15 @@ body {
 // Headings
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   font-weight: 400;
 
   & .lg-heading {
-    font-size: 6rem;
+    font-size: 12rem;
   }
 
   & .sm-heading {
@@ -33,6 +36,12 @@ h3 {
     padding: 0.2rem 1rem;
     background: rgba(lighten($primary-color, 2), 0.5);
   }
+}
+
+p {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
 }
 
 a {
@@ -80,6 +89,7 @@ main {
   grid-gap: 30px;
   grid-template-areas:
     "bioimage bio bio"
+    "work_exp work_exp work_exp"
     "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr);
 
@@ -88,12 +98,20 @@ main {
     margin-top: 4rem;
     border-radius: 50%;
     border: $secondary-color 3px solid;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .bio {
     grid-area: bio;
     font-size: 1.5rem;
     margin-top: 4rem;
+  }
+
+  .work_exp {
+    grid-area: work_exp;
+    font-size: 2rem;
+    margin-top: 2rem;
   }
 
   .job-1 {
@@ -113,19 +131,61 @@ main {
     padding: 0.5rem;
     border-bottom: $secondary-color 5px solid;
   }
+}
 
-  .company-image {
-    margin: auto;
-    border: $secondary-color 1px solid;
-    height: 100px;
-    width: 100px;
+.company-image {
+  margin: auto;
+  border: $secondary-color 1px solid;
+  height: 100px;
+  width: 100px;
+}
+
+// Resume
+
+.resume-info {
+  display: grid;
+  grid-gap: 30px;
+  justify-content: space-evenly;
+  align-items: center;
+  grid-template-areas:
+    "summary summary"
+    "projects_title projects_title"
+    "project1 project2"
+    "project3 ."
+    "education_title education_title"
+    "education1 education2"
+    "awards_title awards_title"
+    "award1 award2";
+
+  .projects-title {
+    grid-area: projects_title;
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+
+  .project-1 {
+    grid-area: project1;
+  }
+
+  .project-2 {
+    grid-area: project2;
+  }
+
+  .project-3 {
+    grid-area: project3;
+  }
+
+  .project {
+    background: lighten($primary-color, 5);
+    padding: 0.5rem;
+    border-bottom: $secondary-color 5px solid;
   }
 }
 
 // Work/Projects
 .projects {
   display: grid;
-  grid-gap: 0.7rem;
+  grid-gap: 1rem;
   grid-template-columns: repeat(3, 1fr);
 
   img {
@@ -174,6 +234,8 @@ main {
   padding: 0.5rem 1rem;
   border: 0;
   margin-bottom: 0.3rem;
+  max-width: 30rem;
+  font-size: 2rem;
   &:hover {
     background: $secondary-color;
     color: set-text-color($secondary-color);
@@ -192,12 +254,16 @@ main {
   color: #333;
 }
 
+.content {
+  min-height: calc(100vh - 70px);
+}
+
 #main-footer {
   text-align: center;
   padding: 1rem;
   background: darken($primary-color, 10);
   color: set-text-color($primary-color);
-  height: 60px;
+  height: 50px;
 }
 
 @import "mobile";
