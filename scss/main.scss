@@ -18,11 +18,27 @@ body {
 }
 
 // Headings
-h1,
-h2,
-h3,
-h4,
-h5,
+h1 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+h2 {
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+h3 {
+  font-size: 2rem;
+  font-weight: 200;
+}
+h4 {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+h5 {
+  font-size: 1rem;
+  font-weight: 200;
+}
+
 h6 {
   margin: 0;
   font-weight: 400;
@@ -41,7 +57,17 @@ h6 {
 p {
   color: white;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 1.5rem;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 1rem;
 }
 
 a {
@@ -149,13 +175,33 @@ main {
   align-items: center;
   grid-template-areas:
     "summary summary"
+    "education_title education_title"
+    "education1 education2"
     "projects_title projects_title"
     "project1 project2"
     "project3 ."
-    "education_title education_title"
-    "education1 education2"
     "awards_title awards_title"
     "award1 award2";
+
+  .education-title {
+    grid-area: education_title;
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+
+  .education-1 {
+    grid-area: education1;
+  }
+
+  .education-2 {
+    grid-area: education2;
+  }
+
+  .education {
+    background: lighten($primary-color, 5);
+    padding: 0.5rem;
+    border-bottom: $secondary-color 5px solid;
+  }
 
   .projects-title {
     grid-area: projects_title;
@@ -190,12 +236,12 @@ main {
 
   img {
     width: 100%;
+    opacity: 0.5;
     border: 3px white solid;
-    width: 280px;
     height: 150px;
 
     &:hover {
-      opacity: 0.5;
+      opacity: 1;
       border-color: $secondary-color;
       @include easeOut;
     }

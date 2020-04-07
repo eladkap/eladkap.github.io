@@ -70,13 +70,13 @@
   .resume-info {
     grid-template-areas:
       "summary"
+      "education_title"
+      "education1"
+      "education2"
       "projects_title"
       "project1"
       "project2"
       "project3"
-      "education_title"
-      "education1"
-      "education2"
       "awards_title"
       "award1"
       "award2"
@@ -96,6 +96,25 @@
 @include mediaSmall {
   main#home h1 {
     margin-top: 10vh;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  h4 {
+    font-size: 0.8rem;
+  }
+  h5 {
+    font-size: 0.5rem;
+  }
+  p {
+    font-size: 1rem;
   }
 
   .menu {
