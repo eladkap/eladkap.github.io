@@ -63,9 +63,10 @@ p {
 ul {
   display: block;
   list-style-type: disc;
+  font-size: 1.5rem;
   margin-top: 1em;
   margin-bottom: 1em;
-  margin-left: 0;
+  margin-left: 2rem;
   margin-right: 0;
   padding-left: 1rem;
 }
@@ -134,7 +135,7 @@ main {
     margin-top: 4rem;
   }
 
-  .work_exp {
+  .work-exp {
     grid-area: work_exp;
     font-size: 2rem;
     margin-top: 2rem;
@@ -174,9 +175,10 @@ main {
   justify-content: space-evenly;
   align-items: center;
   grid-template-areas:
-    "summary summary"
-    "education_title education_title"
-    "education1 education2"
+    "education_title skills_title"
+    "education1 skills"
+    "education2 skills"
+    ". skills"
     "projects_title projects_title"
     "project1 project2"
     "project3 ."
@@ -186,7 +188,7 @@ main {
   .education-title {
     grid-area: education_title;
     font-size: 2rem;
-    margin-top: 2rem;
+    margin: 1rem auto;
   }
 
   .education-1 {
@@ -203,10 +205,73 @@ main {
     border-bottom: $secondary-color 5px solid;
   }
 
+  .skills-title {
+    grid-area: skills_title;
+    margin: 1rem auto;
+  }
+
+  .skills {
+    grid-area: skills;
+    width: 60%;
+    margin: 1rem auto;
+    color: white;
+  }
+
+  .skills li {
+    margin: 1em 0;
+    list-style: none;
+  }
+
+  .bar {
+    background: rgba(lighten($primary-color, 2), 0.5);
+    display: block;
+    height: 1em;
+    border: 1px $secondary-color solid;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: lighten($primary-color, 5);
+  }
+
+  .bar span {
+    height: 1rem;
+    float: left;
+    background: #48cbec;
+  }
+
+  .skill-python {
+    width: 90%;
+    animation: skill-python 2s;
+  }
+
+  .skill-csharp {
+    width: 85%;
+    animation: skill-csharp 2s;
+  }
+
+  .skill-wpf {
+    width: 80%;
+    animation: skill-wpf 2s;
+  }
+
+  .skill-git {
+    width: 70%;
+    animation: skill-git 2s;
+  }
+
+  .skill-net {
+    width: 75%;
+    animation: skill-net 2s;
+  }
+
+  .skill-js {
+    width: 80%;
+    animation: skill-js 2s;
+  }
+
   .projects-title {
     grid-area: projects_title;
     font-size: 2rem;
-    margin-top: 2rem;
+    margin: 1rm auto;
   }
 
   .project-1 {
