@@ -69,9 +69,9 @@
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
-    float: left;
-    width: 50%;
-    height: 100vh;
+    float: right;
+    width: 25%;
+    height: 50%;
     overflow: hidden; }
   .menu-nav {
     margin: 0;
@@ -155,7 +155,7 @@ body {
       background: rgba(68, 68, 68, 0.7); }
 
 h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 400; }
 
 h2 {
@@ -229,15 +229,16 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "bioimage bio bio" "work_exp work_exp work_exp" "job1 job2 job3";
-  grid-template-columns: repeat(3, 1fr); }
+  grid-template-areas: "bioimage bio bio bio" "work_exp work_exp work_exp work_exp" "job1 job1 job2 job2" "job3 job3 job4 job4";
+  grid-template-columns: repeat(4, 1fr); }
   .about-info .bio-image {
     grid-area: bioimage;
     margin-top: 4rem;
     border-radius: 50%;
-    border: #39c9bb 3px solid;
+    border: #39c9bb 1px solid;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    width: 80%; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem;
@@ -252,6 +253,8 @@ main {
     grid-area: job2; }
   .about-info .job-3 {
     grid-area: job3; }
+  .about-info .job-4 {
+    grid-area: job4; }
   .about-info .job {
     background: #515151;
     padding: 0.5rem;
@@ -324,7 +327,7 @@ main {
     animation: skill-js 2s; }
   .resume-info .projects-title {
     grid-area: projects_title;
-    font-size: 2rem;
+    font-size: 4rem;
     margin: 1rm auto; }
   .resume-info .project-1 {
     grid-area: project1; }

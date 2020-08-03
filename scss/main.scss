@@ -19,7 +19,7 @@ body {
 
 // Headings
 h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 400;
 }
 h2 {
@@ -115,18 +115,20 @@ main {
   display: grid;
   grid-gap: 30px;
   grid-template-areas:
-    "bioimage bio bio"
-    "work_exp work_exp work_exp"
-    "job1 job2 job3";
-  grid-template-columns: repeat(3, 1fr);
+    "bioimage bio bio bio"
+    "work_exp work_exp work_exp work_exp"
+    "job1 job1 job2 job2"
+    "job3 job3 job4 job4";
+  grid-template-columns: repeat(4, 1fr);
 
   .bio-image {
     grid-area: bioimage;
     margin-top: 4rem;
     border-radius: 50%;
-    border: $secondary-color 3px solid;
+    border: $secondary-color 1px solid;
     margin-left: auto;
     margin-right: auto;
+    width: 80%;
   }
 
   .bio {
@@ -151,6 +153,10 @@ main {
 
   .job-3 {
     grid-area: job3;
+  }
+
+  .job-4 {
+    grid-area: job4;
   }
 
   .job {
@@ -270,7 +276,7 @@ main {
 
   .projects-title {
     grid-area: projects_title;
-    font-size: 2rem;
+    font-size: 4rem;
     margin: 1rm auto;
   }
 
