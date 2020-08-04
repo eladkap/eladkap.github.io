@@ -187,15 +187,16 @@ main {
     "education2 skills"
     "projects_title honors_awards_title"
     "project1 award1"
-    "project2 award2"
-    "project3 award3";
+    "project2 ."
+    "project3 .";
 
   grid-template-columns: repeat(2, 1fr);
 
   .education-title {
     grid-area: education_title;
     font-size: 2rem;
-    margin: 1rem auto;
+    margin-top: 2rem;
+    // margin: 1rem auto;
   }
 
   .education-1 {

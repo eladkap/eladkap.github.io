@@ -78,15 +78,16 @@
       "projects_title"
       "project1"
       "project2"
-      "project3";
-    // "awards_title"
-    // "award1"
+      "project3"
+      "awards_title"
+      "award1";
     // "award2"
     // "award3";
+    grid-template-columns: 1fr;
   }
 
   .projects {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1fr);
   }
 
   .btn {
@@ -125,9 +126,9 @@
     }
   }
 
-  .projects {
-    grid-template-columns: 1fr;
-  }
+  // .projects {
+  //   grid-template-columns: 1fr;
+  // }
 
   .btn {
     font-size: 1rem;
