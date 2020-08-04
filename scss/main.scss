@@ -180,16 +180,17 @@ main {
   grid-gap: 30px;
   justify-content: space-evenly;
   align-items: center;
+
   grid-template-areas:
     "education_title skills_title"
     "education1 skills"
     "education2 skills"
-    ". skills"
-    "projects_title projects_title"
-    "project1 project2"
-    "project3 ."
-    "awards_title awards_title"
-    "award1 award2";
+    "projects_title honors_awards_title"
+    "project1 award1"
+    "project2 award2"
+    "project3 award3";
+
+  grid-template-columns: repeat(2, 1fr);
 
   .education-title {
     grid-area: education_title;
@@ -280,6 +281,12 @@ main {
     margin: 1rm auto;
   }
 
+  .honors-awards-title {
+    grid-area: honors_awards_title;
+    font-size: 4rem;
+    margin: 1rm auto;
+  }
+
   .project-1 {
     grid-area: project1;
   }
@@ -293,6 +300,24 @@ main {
   }
 
   .project {
+    background: lighten($primary-color, 5);
+    padding: 0.5rem;
+    border-bottom: $secondary-color 5px solid;
+  }
+
+  .award-1 {
+    grid-area: award1;
+  }
+
+  .award-2 {
+    grid-area: award2;
+  }
+
+  .award-3 {
+    grid-area: award3;
+  }
+
+  .award {
     background: lighten($primary-color, 5);
     padding: 0.5rem;
     border-bottom: $secondary-color 5px solid;

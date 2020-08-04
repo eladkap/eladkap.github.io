@@ -271,7 +271,8 @@ main {
   grid-gap: 30px;
   justify-content: space-evenly;
   align-items: center;
-  grid-template-areas: "education_title skills_title" "education1 skills" "education2 skills" ". skills" "projects_title projects_title" "project1 project2" "project3 ." "awards_title awards_title" "award1 award2"; }
+  grid-template-areas: "education_title skills_title" "education1 skills" "education2 skills" "projects_title honors_awards_title" "project1 award1" "project2 award2" "project3 award3";
+  grid-template-columns: repeat(2, 1fr); }
   .resume-info .education-title {
     grid-area: education_title;
     font-size: 2rem;
@@ -329,6 +330,10 @@ main {
     grid-area: projects_title;
     font-size: 4rem;
     margin: 1rm auto; }
+  .resume-info .honors-awards-title {
+    grid-area: honors_awards_title;
+    font-size: 4rem;
+    margin: 1rm auto; }
   .resume-info .project-1 {
     grid-area: project1; }
   .resume-info .project-2 {
@@ -336,6 +341,16 @@ main {
   .resume-info .project-3 {
     grid-area: project3; }
   .resume-info .project {
+    background: #515151;
+    padding: 0.5rem;
+    border-bottom: #39c9bb 5px solid; }
+  .resume-info .award-1 {
+    grid-area: award1; }
+  .resume-info .award-2 {
+    grid-area: award2; }
+  .resume-info .award-3 {
+    grid-area: award3; }
+  .resume-info .award {
     background: #515151;
     padding: 0.5rem;
     border-bottom: #39c9bb 5px solid; }
@@ -438,10 +453,10 @@ main {
       width: 150px;
       height: 150px; }
   .about-info {
-    grid-template-areas: "bioimage" "bio" "work_exp" "job1" "job2" "job3";
+    grid-template-areas: "bioimage" "bio" "work_exp" "job1" "job2" "job3" "job4";
     grid-template-columns: 1fr; }
   .resume-info {
-    grid-template-areas: "education_title" "education1" "education2" "skill_title" "skills" "projects_title" "project1" "project2" "project3" "awards_title" "award1" "award2" "award3"; }
+    grid-template-areas: "education_title" "education1" "education2" "skill_title" "skills" "projects_title" "project1" "project2" "project3"; }
   .projects {
     grid-template-columns: repeat(2, 1fr); }
   .btn, .btn-dark, .btn-light {
