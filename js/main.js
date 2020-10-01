@@ -29,31 +29,3 @@ function toggleMenu() {
   // Set Menu State
   showMenu = !showMenu;
 }
-
-// Visitors count
-
-// const countVisitors = document.getElementById("count_visitors");
-
-// var GetResponse = function () {
-//   return Promise.resolve($.get("https://www.cloudflare.com/cdn-cgi/trace"));
-// };
-
-// async function UpdateVisitorsData() {
-// Get IP from host
-//   let responseText = await GetResponse();
-//   let ipStr = responseText.match(/ip=(\d+.\d+.\d+.\d+)/gi)[0];
-//   var ip = ipStr.split("=")[1];
-//   console.log(ip);
-
-//   // Read text file
-//   fetch("/data/visitors.txt")
-//     .then((response) => response.text())
-//     .then((fileText) => {
-//       let ipAddresses = fileText.split("\n");
-//       console.log(ipAddresses);
-//       if (!ipAddresses.includes(ip)) {
-//       }
-//     });
-// }
-
-// UpdateVisitorsData();
