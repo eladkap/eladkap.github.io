@@ -148,7 +148,8 @@ body {
   height: 100%;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.5; }
+  line-height: 1.5;
+  background: linear-gradient(to right, #000014, #000032, #000014); }
 
 h1 {
   font-size: 4rem;

@@ -27,7 +27,7 @@ class Star {
   }
 
   Update() {
-    //this.CircularMotion();
+    // this.CircularMotion();
     this.LinearMotion();
   }
 

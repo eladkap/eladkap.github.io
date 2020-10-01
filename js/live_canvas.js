@@ -5,15 +5,16 @@ canvas.height = window.innerHeight;
 
 var ctx = canvas.getContext("2d");
 
-/* GLOBALS */
+//#region GLOBALS
 var stars;
 var mouse = {
   x: undefined,
   y: undefined,
 };
+//#endregion
 
-/* MOUSE EVENTS */
-// window.addEventListener("mousemove", MouseMove);
+//#region  MOUSE EVENTS
+window.addEventListener("mousemove", MouseMove);
 window.addEventListener("click", MouseClick);
 window.addEventListener("resize", WindowResize);
 window.addEventListener("keypress", KeyPress);
@@ -31,7 +32,7 @@ function MouseClick(event) {
   let rotationRadius = 0;
   let star = new Star(mouse.x, mouse.y, 0, 0, radius, speed, rotationRadius);
   stars.push(star);
-  // SetStarsTrackMouse();
+  //   SetStarsTrackMouse();
 }
 
 function WindowResize() {
@@ -40,7 +41,7 @@ function WindowResize() {
 }
 
 function KeyPress(event) {}
-/* END MOUSE EVENTS */
+//#endregion
 
 function SetStarsTrackMouse() {
   for (let star of stars) {
@@ -51,7 +52,7 @@ function SetStarsTrackMouse() {
   }
 }
 
-function CreateStars(number) {
+function CreateStars() {
   stars = [];
   for (let i = 0; i < STARS_NUM; i++) {
     let radius = RandomRange(MIN_RADIUS, MAX_RADIUS);
@@ -107,8 +108,6 @@ function Setup() {
 
 function Draw() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
-  // ctx.fillStyle = "rgba(10, 10, 10, 0.05)";
-  // ctx.fillRect(0, 0, canvas.width, canvas.height);
   requestAnimationFrame(Draw);
   DrawStars();
   DrawLines();

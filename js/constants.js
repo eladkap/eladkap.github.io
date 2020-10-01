@@ -1,7 +1,7 @@
 const STARS_NUM = 30;
 
-const MIN_RADIUS = 2;
-const MAX_RADIUS = 3;
+const MIN_RADIUS = 1;
+const MAX_RADIUS = 2;
 
 const MIN_SPEED = 0.8;
 const MAX_SPEED = 1.2;
