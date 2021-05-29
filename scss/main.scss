@@ -1,5 +1,5 @@
-@import "config";
-@import "menu";
+@import 'config';
+@import 'menu';
 
 * {
   box-sizing: border-box;
@@ -28,7 +28,7 @@ body {
   margin: 0;
 
   //font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
   background: linear-gradient(
     to right,
@@ -136,10 +136,10 @@ main {
   display: grid;
   grid-gap: 30px;
   grid-template-areas:
-    "bioimage bio bio bio"
-    "work_exp work_exp work_exp work_exp"
-    "job1 job1 job2 job2"
-    "job3 job3 job4 job4";
+    'bioimage bio bio bio'
+    'work_exp work_exp work_exp work_exp'
+    'job0 job0 job1 job1'
+    'job2 job2 job3 job3';
   grid-template-columns: repeat(4, 1fr);
 
   .bio-image {
@@ -162,6 +162,10 @@ main {
     grid-area: work_exp;
     font-size: 2rem;
     margin-top: 2rem;
+  }
+
+  .job-0 {
+    grid-area: job0;
   }
 
   .job-1 {
@@ -203,13 +207,13 @@ main {
   align-items: center;
 
   grid-template-areas:
-    "education_title pro_skills_title"
-    "education1 pro_skills"
-    "education2 pro_skills"
-    "projects_title soft_skills_title"
-    "project1 soft_skills"
-    "project2 honors_awards_title"
-    "project3 award1";
+    'education_title pro_skills_title'
+    'education1 pro_skills'
+    'education2 pro_skills'
+    'projects_title soft_skills_title'
+    'project1 soft_skills'
+    'project2 honors_awards_title'
+    'project3 award1';
 
   grid-template-columns: repeat(2, 1fr);
 
@@ -325,7 +329,7 @@ main {
 
   .hexagon:before,
   .hexagon:after {
-    content: "";
+    content: '';
     position: absolute;
     width: 0;
     border-left: 150px solid transparent;
@@ -476,4 +480,4 @@ main {
   height: 50px;
 }
 
-@import "mobile";
+@import 'mobile';
