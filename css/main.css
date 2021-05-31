@@ -16,6 +16,15 @@
   }
 }
 
+@keyframes skill-java {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
 @keyframes skill-wpf {
   0% {
     width: 0%;
@@ -422,6 +431,10 @@ main#home h1 {
 .resume-info .skill-csharp {
   width: 85%;
   animation: skill-csharp 2s;
+}
+.resume-info .skill-java {
+  width: 85%;
+  animation: skill-java 2s;
 }
 .resume-info .skill-wpf {
   width: 80%;
