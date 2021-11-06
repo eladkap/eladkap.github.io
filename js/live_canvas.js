@@ -1,9 +1,9 @@
-var canvas = document.getElementById("live_canvas");
+var canvas = document.getElementById('live_canvas');
 
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-var ctx = canvas.getContext("2d");
+var ctx = canvas.getContext('2d');
 
 //#region GLOBALS
 var stars;
@@ -14,10 +14,10 @@ var mouse = {
 //#endregion
 
 //#region  MOUSE EVENTS
-window.addEventListener("mousemove", MouseMove);
-window.addEventListener("click", MouseClick);
-window.addEventListener("resize", WindowResize);
-window.addEventListener("keypress", KeyPress);
+window.addEventListener('mousemove', MouseMove);
+window.addEventListener('click', MouseClick);
+window.addEventListener('resize', WindowResize);
+window.addEventListener('keypress', KeyPress);
 
 function MouseMove(event) {
   mouse.x = event.x;
@@ -84,13 +84,13 @@ function DrawLines() {
           ((MIN_DISTANCE - dist) / MIN_DISTANCE) * 255
         );
         ctx.strokeStyle =
-          "rgba(" +
+          'rgba(' +
           brightness +
-          ", " +
+          ', ' +
           brightness +
-          ", " +
+          ', ' +
           brightness +
-          ", 0.95)";
+          ', 0.95)';
         ctx.moveTo(stars[i].pos.x, stars[i].pos.y);
         ctx.lineTo(stars[j].pos.x, stars[j].pos.y);
         ctx.stroke();
