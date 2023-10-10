@@ -52,12 +52,39 @@
   }
 }
 
+@keyframes skill-mongodb {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 85%;
+  }
+}
+
+@keyframes skill-elasticsearch {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
 @keyframes skill-js {
   0% {
     width: 0%;
   }
   100% {
     width: 80%;
+  }
+}
+
+@keyframes skill-linux {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 85%;
   }
 }
 
@@ -450,6 +477,18 @@ main#home h1 {
 }
 .resume-info .skill-js {
   width: 80%;
+  animation: skill-js 2s;
+}
+.resume-info .skill-mongodb {
+  width: 90%;
+  animation: skill-js 2s;
+}
+.resume-info .skill-elasticsearch {
+  width: 90%;
+  animation: skill-js 2s;
+}
+.resume-info .skill-linux {
+  width: 85%;
   animation: skill-js 2s;
 }
 .resume-info .hexagon {
