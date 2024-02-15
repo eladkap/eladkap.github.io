@@ -1,262 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="ie=edge" />
-    <script
-      src="https://kit.fontawesome.com/dee22dccf2.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>Elad Kapuza::About Me</title>
-  </head>
-
-  <body>
-    <header>
-      <div class="menu-btn">
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
-      </div>
-
-      <nav class="menu">
-        <div class="menu-branding">
-          <!-- <div class="portrait">
-            <img
-              class="portrait_bw"
-              src="img/profile1_bw.jpg"
-              alt="Elad Kapuza"
-            />
-          </div> -->
-        </div>
-        <ul class="menu-nav">
-          <li class="nav-item">
-            <a href="index.html" class="nav-link"> Home </a>
-          </li>
-
-          <li class="nav-item current">
-            <a href="about.html" class="nav-link"> About Me </a>
-          </li>
-
-          <li class="nav-item">
-            <a href="resume.html" class="nav-link"> My Resume </a>
-          </li>
-
-          <li class="nav-item">
-            <a href="work.html" class="nav-link"> My Projects </a>
-          </li>
-
-          <!-- <li class="nav-item">
-            <a href="contact.html" class="nav-link">
-              Contact
-            </a>
-          </li> -->
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio 2 | Elad Kapuza</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/about.css">
+    <link rel="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class='active-page'>About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="projects.html">Projects</a></li>
         </ul>
-      </nav>
-    </header>
+    </nav>
 
-    <main id="about">
-      <h1 class="lg-heading">About <span class="text-secondary">Me</span></h1>
-      <h2 class="lg-heading">Experienced Automation Engineer</h2>
+    <div class="container">
+        <h1 style="text-align: center; color: var(--text-color); padding-top: 10px;">
+            <i style="color: var(--text-color); margin-right: 10px;" class="fa fa-user"></i>
+            About 
+            <span style="color: var(--brand-color);">Me</span>
+        </h1>
 
-      <div class="about-info">
-        <img class="bio-image" src="img/profile_2020.jpg" alt="Elad Kapuza" />
-
-        <div class="bio">
-          <h2 class="text-secondary">BIO</h2>
-          <p>
-            Automation engineer with 6 years of experience in developing
-            automation solutions, tools and web applications for testing
-            software and hardware products.
-          </p>
-          <p>Bachelor of Computer Science at the Technion.</p>
-          <p>Practical Software Engineer.</p>
-          <p>Currently work as Automation Engineer at PTC.</p>
-        </div>
-
-        <div class="work_exp">
-          <h1 class="text-secondary">Experience</h1>
-        </div>
-
-        <div class="job job-1">
-          <table>
+        <table style="margin-left: 10%; width: 70%">
             <tr>
-              <td>
-                <h2>Automation Engineer</h2>
-              </td>
+                <td>
+                    <div >
+                        <img src="./../../../assets/images/profile/profile_2020.jpg" class="bio-image" alt="Elad Kapuza">
+                    </div>
+                </td>
+                <td>
+                    <div style="margin-left: 5px; width: 100%;">
+                        <p style="font-size: x-large;">
+                            Automation developer with 6 years of experience in developing automation infrastructure and tools
+                            for testing SW, monitoring resources, reporting and alerting.
+                            In addition I have 3 years of experience in developing Web and REST API applications,
+                            working with SQL and NO-SQL databases.
+                            I also have good experience with CI/CD pipelines and dockers.
+                        </p>
+                        <p style="font-size: x-large;">
+                            Bachelor of Computer Science from Technion.
+                        </p>
+                        
+                        <p style="font-size: x-large;">
+                            Currently work as Automation and DevOps Engineer at PTC.
+                        </p>
+        
+                        <p><strong style="color: var(--title-color)">Email: </strong> <span> eladkapuza@gmail.com</span></p>
+                        <p><strong style="color: var(--title-color)">Place: </strong> <span> Haifa, Israel</span></p>
+        
+                    </div>
+                </td>
             </tr>
-            <tr>
-              <td>
-                <h3>PTC | 2021-Present</h3>
-              </td>
-              <td>
-                <img class="company-image" src="img/companies/ptc_logo.png" />
-              </td>
-            </tr>
-          </table>
-          <ul>
-            <li>
-              Developed automation tools for testing and validating CAD products
-            </li>
-            <li>
-              Responsible for Regression DB system supporting hundreds of CAD developers
-            </li>
-            <li>
-              Responsible for Automatic Scanning System for scanning PTC products and report vulnerabilities to owners
-            </li>
-            <li>
-              Designed and developed automatic infrastructure tool resolving Zabbix problems in Supermicro blade systems
-            </li>
-            <li>
-              Innovated and developed internal search engine serving hundreds of PTC users using Elasticsearch
-            </li>
-            <li>
-              Experience with Java Spring, Angular, Python, OOP, Jenkins CI/CD, GitLab, Dockes, MongoDB, PostgreSQL, Elasticsearch, Linux, Bash
-            </li>
-          </ul>
-        </div>
+        
+        </table>
+        
+    </div>
 
-        <div class="job job-2">
-          <table>
-            <tr>
-              <td>
-                <h2>Automation Developer</h2>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <h3>Lumenis Ltd | 2019-2020</h3>
-              </td>
-              <td>
-                <img
-                  class="company-image"
-                  src="img/companies/lumenis_logo.PNG"
-                />
-              </td>
-            </tr>
-          </table>
-          <ul>
-            <li>
-              Planned and developed 5 automation applications for testing 4
-              healthcare systems
-            </li>
-            <li>
-              Improved testing process, achieving 80% reduction in testing time
-            </li>
-            <li>
-              Developed automation tools for testing AWS cloud and Server-Client
-              systems
-            </li>
-            <li>
-              Experienced with Python, C#, micro-controllers (Arduino,
-              oscilloscopes and Ophir devices)
-            </li>
-          </ul>
-        </div>
-
-        <div class="job job-3">
-          <table>
-            <tr>
-              <td>
-                <h2>Automation Developer</h2>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <h3>Elbit Systems Ltd | 2018-2019</h3>
-              </td>
-              <td>
-                <img
-                  class="company-image"
-                  src="img/companies/elbit_systems_logo.PNG"
-                />
-              </td>
-            </tr>
-          </table>
-
-          <ul>
-            <li>
-              Developed automation infrastructure testing real-time embedded
-              system
-            </li>
-            <li>Experience with Python, C# and Jenkins</li>
-          </ul>
-        </div>
-
-        <div class="job job-4">
-          <table>
-            <tr>
-              <td>
-                <h2>R&D Software Engineer</h2>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <h3>Cronus Cyber Technologies | 2017-2018</h3>
-              </td>
-              <td>
-                <img
-                  class="company-image"
-                  src="img/companies/cronus_logo.PNG"
-                />
-              </td>
-            </tr>
-          </table>
-
-          <ul>
-            <li>
-              Developed automation tool to collect vulnerabilities and updating
-              database
-            </li>
-            <li>
-              Expanded product database to cover more hundreds of CVEs and
-              products
-            </li>
-            <li>
-              Experience with Python, Linux Bash, networking, Jenkins, Git
-            </li>
-          </ul>
-        </div>
-
-        <!-- <div class="job job-5">
-          <table>
-            <tr>
-              <td>
-                <h2>C Language Tutor</h2>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <h3>ASAT (Technion) | 2014-2015</h3>
-              </td>
-              <td>
-                <img class="company-image" src="img/companies/asat_logo.png" />
-              </td>
-            </tr>
-          </table> -->
-
-        <!-- <ul>
-            <li>
-              Assisted tens of new students taking “Intro to Computer Science”
-              courses
-            </li>
-            <li>
-              Prepared and managed material for tens workshops and marathon for
-              final exams
-            </li>
-            <li>Debugged and solved hundreds of HW exercises</li>
-            <li>
-              Experienced with debugging and troubleshooting programs in C and
-              lecturing
-            </li>
-          </ul> -->
-        <!-- </div> -->
-      </div>
-    </main>
-
-    <footer id="main-footer">Copyright &copy; Elad Kapuza 2022</footer>
-
-    <script src="js/main.js"></script>
-  </body>
+</body>
 </html>

@@ -1,0 +1,28 @@
+h1,h2,h3,h4 {
+    color: var(--brand-color);
+}
+
+img {
+    width: 400px;
+    opacity: 0.5;
+    border: 3px white solid;
+    height: 200px;
+}
+
+img:hover {
+    opacity: 1;
+    border-color: #39c9bb;
+    transition: all 0.5s ease-out;
+}
+
+td {
+    width: 60%;
+    padding-left: 50px;
+    padding-bottom: 50px;
+}
+
+p {
+    width: 400px;
+    color: var(--text-color);
+    font-size: large;
+}

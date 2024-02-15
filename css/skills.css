@@ -1,0 +1,23 @@
+h4 {
+    color: var(--text-color);
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+img {
+    width: 20%;
+}
+
+td {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: var(--card-backcolor);
+}
+
+td:hover {
+    background-color: var(--card-backcolor-hover);
+    /* box-shadow: 2px 2px 10px 2px #0F0; */
+}

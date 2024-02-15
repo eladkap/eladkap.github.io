@@ -1,0 +1,11 @@
+p {
+    font-size: x-large;
+    text-align: justify;
+    color: var(--paragraph-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+.bio-image {
+    border-radius: 5%;
+    scale: 50%;
+}

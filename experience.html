@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio 2 | Elad Kapuza</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/experience.css">
+    <link rel="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/experience.js"></script>
+</head>
+<body onload="hideAllCompanyInfo()">
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="experience.html" class='active-page'>Experience</a></li>
+            <li><a href="projects.html">Projects</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1 style="text-align: center; color: var(--text-color); padding-top: 10px;">
+            <i style="color: var(--text-color); margin-right: 10px;" class="fa fa-briefcase"></i>
+            My 
+            <span style="color: var(--brand-color);">Experience</span>
+        </h1> 
+
+        <div class="timeline">
+            <div style="margin-left: 10%">
+              <ul>
+                  <li onmouseover="showCompanyInfo('ptc')" onmouseout="hideCompanyInfo('ptc')">
+                    <span>PTC</span>
+                    
+                    <div class="content" style="display: flex; justify-content: left">
+                      <div>
+                        <h3>Automation Developer</h3>
+                        <h4>Jan 2021 - Present</h4>
+                        <div id="ptc-info">
+                          <h5>* Responsible for Regression DB application supporting hundreds of Creo Developers</h5>
+                          <h5>* Responsible and developed Automatic Scanning System for scanning PTC products and report vulnerabilities to owners</h5>
+                          <h5>* Planned and developed automatic infrastructure tool resolving Zabbix problems in Supermicro blade systems and other hosts</h5>
+                          <h5>* Innovated, designed and developed internal search engine using Elasticsearch serving hundreds of PTC users</h5>
+                          <h5>* Innovated, designed and developed monitoring system including alert notifications via MS-Teams</h5>
+                        </div>
+                      </div>
+                                           
+                    </div>
+                  </li>
+          
+                  <li onmouseover="showCompanyInfo('lumenis')" onmouseout="hideCompanyInfo('lumenis')">
+                      <span>Lumenis Ltd</span>
+                      <!-- <img src="./../../../assets/images/companies/lumenis_logo.PNG" width="80px" style="margin-left: -260px"> -->
+                      <div class="content">
+                        <h3>Automation Engineer</h3>
+                        <h4>Dec 2019 - Dec 2020</h4>
+                        <div id="lumenis-info">
+                          <h5>* Planned and developed 5 automation applications in Python for testing 4 healthcare systems</h5>
+                          <h5>* Improved testing process, achieving 80% reduction in testing time</h5>
+                        </div>
+                      </div>
+                  </li>
+          
+                  <li onmouseover="showCompanyInfo('elbit')" onmouseout="hideCompanyInfo('elbit')">
+                      <span>Elbit Ltd</span>
+                      <!-- <img src="./../../../assets/images/companies/elbit_systems_logo.PNG" width="80px" style="margin-left: -220px"> -->
+                      <div class="content">
+                        <h3>Automation Engineer</h3>
+                        <h4>Nov 2018 - Dec 2019</h4>
+                        <div id="elbit-info">
+                          <h5>* Developed automation infrastructure in C# and Python for testing real-time embedded system</h5>
+                        </div>
+                      </div>
+                  </li>
+          
+                  <li onmouseover="showCompanyInfo('cronus')" onmouseout="hideCompanyInfo('cronus')">
+                      <span>Cronus</span>
+                      <!-- <img src="./../../../assets/images/companies/cronus_logo.PNG" width="80px" style="margin-left: -210px"> -->
+                      <div class="content">
+                        <h3>R&D Software Engineer</h3>
+                        <h4>Jan 2017 - May 2018</h4>
+                        <div id="cronus-info">
+                          <h5>* Developed automation tool to collect vulnerabilities and updating database of main product - Cyber scanner</h5>
+                        </div>
+                      </div>
+                  </li>
+          
+                  <li onmouseover="showCompanyInfo('asat')" onmouseout="hideCompanyInfo('asat')">
+                    <span>ASAT Technion</span>
+                    <div class="content">
+                      <h3>C-Language Tutor</h3>
+                      <h4>Mar 2014 - Sep 2015</h4>
+                      <div id="asat-info">
+                        <h5>* Worked as tutor for students in Computer Science C courses</h5>
+                        <h5>* Assisted students in their HW assignments</h5>
+                        <h5>* Prepared students for final exams</h5>
+                      </div>
+                    </div>
+                </li>
+          
+              </ul>
+            </div>
+          </div>
+    </div>
+
+</body>
+</html>

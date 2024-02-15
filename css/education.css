@@ -1,0 +1,30 @@
+h3, h4, h5 {
+    text-align: left;
+    margin-left: 10px;
+}
+
+p {
+    text-align: left;
+    margin-left: 10px;
+}
+
+td {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: var(--card-backcolor);
+}
+
+
+.company-image {
+    margin: auto;
+    border: #39c9bb 1px solid;
+    height: 100px;
+    width: 100px;
+}
+
+
+
