@@ -68,7 +68,7 @@ body {
     padding: 0 1em;
     max-width: 800px;
     margin: 0 auto;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .container2 {
@@ -79,7 +79,7 @@ body {
     padding-right: 2rem;
     /* max-width: 800px; */
     width: 60%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 header {
