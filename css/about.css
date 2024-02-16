@@ -6,6 +6,7 @@ p {
 }
 
 .bio-image {
-    border-radius: 5%;
+    display: block;
+    border-radius: 50px;
     scale: 50%;
 }

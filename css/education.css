@@ -18,12 +18,9 @@ td {
     background-color: var(--card-backcolor);
 }
 
-
 .company-image {
-    margin: auto;
+    margin: 0 30px;
     border: #39c9bb 1px solid;
-    height: 100px;
-    width: 100px;
 }
 
 
