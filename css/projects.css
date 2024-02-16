@@ -26,3 +26,23 @@ p {
     color: var(--text-color);
     font-size: large;
 }
+
+.projects-container {
+    display: grid;
+    gap: 6rem;
+    grid-template-columns: repeat(auto-fit,
+        minmax(min(20rem, 100%), 1fr));
+}
+
+/* @media (min-width: 400px) and (max-width: 800px) {
+    .container2 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+} */
+
+/* @media (min-width: 801px) {
+    .container2 {
+        display: flex;
+    }
+} */

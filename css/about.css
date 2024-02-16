@@ -12,14 +12,22 @@ p {
 }
 
 .bio-image {
+    padding: 2rem;
     display: block;
     border-radius: 50px;
-    scale: 50%;
+
+    /* scale: 50%; */
 }
 
 @media (max-width: 800px) {
+    .container {
+        display: flex;
+        gap: 2rem;
+    }
+
     .bio-image {
         display: flex;
-        scale: 30%;
+        padding: 1rem;
+        scale: 60%;
     }
 }
