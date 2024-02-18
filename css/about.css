@@ -1,7 +1,6 @@
 .container {
     display: flex; justify-content: center;
     max-width: 800px;
-    /* border: 1px solid red; */
 }
 
 p {
@@ -12,22 +11,26 @@ p {
 }
 
 .bio-image {
-    padding: 2rem;
-    display: block;
+    padding: 1rem;
+    display: flex;
     border-radius: 50px;
-
-    /* scale: 50%; */
 }
 
-@media (max-width: 800px) {
+.bio-container {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit,
+        minmax(min(25rem, 100%), 1fr));
+}
+
+/* @media (max-width: 800px) {
     .container {
         display: flex;
-        gap: 2rem;
+        gap: 1rem;
     }
 
     .bio-image {
-        display: flex;
+        display: block;
         padding: 1rem;
-        scale: 60%;
     }
-}
+} */
