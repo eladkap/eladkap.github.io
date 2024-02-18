@@ -5,12 +5,14 @@
     <title>Portfolio | Elad Kapuza</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/menu.css" />
     <link rel="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <nav class="navbar">
+
+    <div class="navbar">
         <ul>
             <li><a href="index.html" class='active-page'>Home</a></li>
             <li><a href="about.html">About</a></li>
@@ -19,7 +21,21 @@
             <li><a href="experience.html">Experience</a></li>
             <li><a href="projects.html">Projects</a></li>
         </ul>
-    </nav>
+        <div class="toggle-btn">
+            <i class="fa fa-bars"></i>
+        </div>
+    </div>
+
+    <div class="dropdown-menu">
+        <ul>
+            <li><a href="index.html" class='active-page'>Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="projects.html">Projects</a></li>
+        </ul>      
+    </div>
 
     <div class="container">
         <div style="margin: auto; width: 50%; padding: 5%;">
@@ -53,8 +69,8 @@
                 <i style="font-size: 24px; margin-left: 0; cursor: pointer;" class="fa fa-file-pdf-o"></i>   
             </a>
         </div>
-    </main>
+    </div>
 
-    
+    <script src="js/menu.js"></script>
 </body>
 </html>

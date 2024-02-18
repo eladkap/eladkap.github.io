@@ -1,0 +1,113 @@
+.navbar {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navbar ul {
+    list-style-type: none;
+    background-color: var(--topnav-backcolor);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.navbar a {
+    color: var(--topnav-forecolor);
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.navbar a:hover {
+    color: var(--topnav-hover-forecolor);
+    transition: 0.5s;
+}
+
+.navbar li {
+    font-size: x-large;
+    float: left;
+}
+
+.navbar ul li a.active-page {
+    background-color: var(--active-page-bg);
+}
+
+.navbar .toggle-btn {
+    color: var(--text-color);
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+    float: right;
+}
+
+.navbar .toggle-btn:hover {
+    color: var(--topnav-hover-forecolor);
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 40%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2 cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown-menu.open {
+    height: auto;
+}
+
+.dropdown-menu li {
+    font-size: x-large;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown-menu ul li a.active-page {
+    color: var(--active-page-bg);
+}
+
+.dropdown-menu a {
+    color: var(--topnav-forecolor);
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.dropdown-menu a:hover {
+    color: var(--topnav-hover-forecolor);
+    transition: 0.5s;
+}
+
+@media (max-width: 992px) {
+    .navbar ul {
+        display: none;
+    }
+    .navbar .toggle-btn {
+        display: block;
+        margin-left: 90%;
+    }
+    .dropdown-menu {
+        display: block;
+    }
+}
+
+@media (max-width: 576px) {
+    .dropdown-menu {
+        left: 2rem;
+        width: unset;
+    }
+}

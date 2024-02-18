@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/menu.css">
     <link rel="stylesheet" type="text/css" href="css/about.css">
     <link rel="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <nav class="navbar">
+    <div class="navbar">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html" class='active-page'>About</a></li>
@@ -21,7 +22,21 @@
             <li><a href="experience.html">Experience</a></li>
             <li><a href="projects.html">Projects</a></li>
         </ul>
-    </nav>
+        <div class="toggle-btn">
+            <i class="fa fa-bars"></i>
+        </div>
+    </div>
+
+    <div class="dropdown-menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class='active-page'>About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="projects.html">Projects</a></li>
+        </ul>      
+    </div>
 
     <h1 style="text-align: center; color: var(--text-color); padding-top: 10px;">
         <i style="color: var(--text-color); margin-right: 10px;" class="fa fa-user"></i>
@@ -56,42 +71,7 @@
             </div>
         </div>  
     </div>
-
-    <!-- <div class="container">
-        <table>
-            <tr>
-                <td>
-                    <div>
-                        <img src="./../../../assets/images/profile/profile_2020.jpg" class="bio-image" alt="Elad Kapuza">
-                    </div>
-                </td>
-                <td>
-                    <div>
-                        <p style="font-size: x-large;">
-                            Automation developer with 6 years of experience in developing automation infrastructure and tools
-                            for testing SW, monitoring resources, reporting and alerting.
-                            In addition I have 3 years of experience in developing Web and REST API applications,
-                            working with SQL and NO-SQL databases.
-                            I also have good experience with CI/CD pipelines and dockers.
-                        </p>
-                        <p style="font-size: x-large;">
-                            Bachelor of Computer Science from Technion.
-                        </p>
-                        
-                        <p style="font-size: x-large;">
-                            Currently work as Automation and DevOps Engineer at PTC.
-                        </p>
-        
-                        <p><strong style="color: var(--title-color)">Email: </strong> <span> eladkapuza@gmail.com</span></p>
-                        <p><strong style="color: var(--title-color)">Place: </strong> <span> Haifa, Israel</span></p>
-        
-                    </div>
-                </td>
-            </tr>
-        
-        </table>
-        
-    </div> -->
-
+    
+    <script src="js/menu.js"></script>
 </body>
 </html>
