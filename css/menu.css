@@ -61,6 +61,7 @@
     border-radius: 10px;
     overflow: hidden;
     transition: height .2 cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 1;
 }
 
 .dropdown-menu.open {
@@ -76,7 +77,7 @@
 }
 
 .dropdown-menu ul li a.active-page {
-    color: var(--active-page-bg);
+    color: var(--active-page-dropdown-bg);
 }
 
 .dropdown-menu a {
