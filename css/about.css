@@ -24,13 +24,9 @@ p {
 }
 
 /* @media (max-width: 800px) {
-    .container {
-        display: flex;
-        gap: 1rem;
-    }
-
     .bio-image {
         display: block;
         padding: 1rem;
+        scale: 70%;
     }
 } */
