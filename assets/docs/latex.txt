@@ -1,0 +1,211 @@
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Elad}{Kapuza}{ \urlstyle{same}\href{https://eladkap.github.io/}{https://eladkap.github.io} | \href{https://linkedin.com/in/eladkapuza}{linkedin.com/in/eladkapuza} |
+\href{mailto:eladkapuza@gmail.com}{eladkapuza@gmail.com} | 054-232-0126
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.5\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SUMMARY
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Summary}
+\location{Automation Engineer with 7 years of
+experience in developing automation infrastructure and 
+4 years in developing Web and REST API applications}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{PTC}
+\descript{| Automation \& DevOps Engineer }
+\location{2021 - Present | Haifa, Israel}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Maintain large scale of servers (>500) destined for regression test system servicing hundreds of developers
+\item Planned and developed automatic tool for scanning products and report vulnerabilities to product owners
+\item Planned and developed automatic infrastructure tool resolving server problems with more than 90\% accuracy
+\item Innovated and developed internal search engine using Elasticsearch serving hundreds of users and managing thousands of pages
+\item Innovated, planned and developed monitoring system containing alerting, resources management and API services
+\item Guide and Mentorship - conducted training and workshops for junior engineers.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Lumenis}
+\descript{| Automation Engineer }
+\location{2019 - 2020 | Yokneam, Israel}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Developed automation applications for testing healthcare systems
+\item Improved testing process by 80\% in testing time
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Elbit Systems}
+\descript{| Automation Engineer }
+\location{2018 – 2019 | Haifa, Israel}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Developed automation infrastructure in C\# and Python for testing real-time embedded system
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Cronus}
+\descript{| R\&D Software Engineer }
+\location{2017 – 2018 | Haifa, Israel}
+\begin{tightemize}
+\item Developed automation tool to collect vulnerabilities and updating database of main product - Cyber scanner
+
+\end{tightemize}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Education
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{Technion, Haifa}
+\descript{Bachelor in Computer Science \& Information Systems}
+\location{March 2017 | Haifa, Israel}
+Graduated with honors (GPA 80) \\
+\sectionsep
+
+\subsection{ORT Bialik College}
+\descript{Practical Software Engineering Diploma}
+\location{May 2008 | Kiryat Bialik, Israel}
+Graduated with excellence (GPA 91) \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.45\textwidth} 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Final Project}
+
+\runsubsection{Fault Management Packet Compression}
+\descript{| Marvell Technology Group Ltd}
+\location{Oct 2014}
+\sectionsep
+\begin{tightemize}
+\item Implemented a simple hardware-friendly delta encoding algorithm allowing up-to 2.6 compression ratio
+\item Published the paper “FM-Delta: Fault Management Packet Compression” (approved by IEEE)
+\item Presented the project poster at IFIP/IEEE IM 2017 international symposium at Lisbon, Portugal
+\item \urlstyle{same}\href{https://github.com/eladkap/The-FM-Delta-Project}{GitHub Link}
+\end{tightemize}
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Publications}
+\descript{FM-Delta: Fault Management Packet Compression}
+\location{July 2017 | Approved by IEEE}
+\urlstyle{same}\href{https://ieeexplore.ieee.org/document/7987338}{Link to paper}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PERSONAL PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Personal Projects}
+
+
+See my projects here: \urlstyle{same}\href{https://eladkap.github.io/projects.html}{https://eladkap.github.io/projects.html}
+\sectionsep
+
+\runsubsection{Sorting Visualization}
+\urlstyle{same}\href{https://github.com/eladkap/sorting}{GitHub Link}
+\sectionsep
+
+\runsubsection{Pathfinding Visualization}
+\urlstyle{same}\href{https://github.com/eladkap/pathfinder}{GitHub Link}
+\sectionsep
+
+\runsubsection{Pacman Remake}
+\urlstyle{same}\href{https://github.com/eladkap/pacman}{GitHub Link}
+\sectionsep
+
+% \sectionsep
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Technical Skills}
+\location{Proficient with:}
+Python \textbullet{} Java Spring \textbullet{} Jenkins CI/CD \textbullet{} Git \textbullet{} GitLab CI/CD \textbullet{} Dockers \textbullet{} Angular \textbullet{} MongoDB \textbullet{} PostgreSQL \textbullet{} Elasticsearch \textbullet{} Linux \textbullet{} Zabbix
+
+\location{Familiar with:}
+C \textbullet{} C++ \textbullet{} C\#
+
+\sectionsep
+
+\subsection{Soft Skills}
+Great Communication (Hebrew \& English) \\
+Great teamwork \textbullet{} Innovative \textbullet{} Agile \textbullet{} Problem-solving
+
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     HONORS/AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Honors/Awards} 
+%\begin{tabular}{l l l}
+%2017 & Presented my project poster & IFIP/IEEE IM \\
+%2015 & Excellent tutor in C-language & Technion \\
+%2014 & Dean's list GPA 85.8 & Technion  \\
+%2008 & Graduated with excellence GPA 91 & Diploma \\
+%\end{tabular}
+%\sectionsep
+%
+
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
